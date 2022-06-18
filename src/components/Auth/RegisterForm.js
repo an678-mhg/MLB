@@ -66,7 +66,7 @@ const RegisterForm = () => {
             className="w-full p-2 rounded-md outline-none"
             type="text"
             name="email"
-            placeholder="Ex: an567007@gmail.com"
+            placeholder="Ex: mlb@gmail.com"
             value={email}
             onChange={handleOnChangeInput}
             required
@@ -82,7 +82,7 @@ const RegisterForm = () => {
             className="w-full p-2 rounded-md outline-none"
             type="text"
             name="name"
-            placeholder="Ex: An Nguyen"
+            placeholder="Ex: mlb-shop"
             value={name}
             onChange={handleOnChangeInput}
             required

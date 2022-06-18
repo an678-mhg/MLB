@@ -66,7 +66,7 @@ const LoginForm = () => {
             className="w-full p-2 rounded-md outline-none"
             type="email"
             name="email"
-            placeholder="Ex: an567007@gmail.com"
+            placeholder="Ex: mlb@gmail.com"
             value={data.email}
             onChange={handleOnChange}
           />
