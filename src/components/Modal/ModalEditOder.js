@@ -30,7 +30,7 @@ const ModalEditOder = ({ data, handleClose }) => {
         isPaid: Boolean(Number(oder.isPaid)),
       });
       if (res.data.success) {
-        toast.success("Sua thanh cong !");
+        toast.success("Sửa thành công!");
         dispatch(
           editOrder({
             ...data,
@@ -42,7 +42,7 @@ const ModalEditOder = ({ data, handleClose }) => {
       handleClose();
     } catch (error) {
       console.log(error);
-      return toast.error("Sua don hang that bai!");
+      return toast.error("Sửa thất bại!");
     }
     setLoading(false);
   };
@@ -57,11 +57,11 @@ const ModalEditOder = ({ data, handleClose }) => {
         onClick={(e) => e.stopPropagation()}
         className="w-[600px] bg-white p-3 rounded-md max-w-full"
       >
-        <p className="py-2 px-3">Ma Don Hang: {data._id}</p>
-        <p className="py-2 px-3">Ten Khach Hang: {data.name}</p>
-        <p className="py-2 px-3">Hinh Thuc Thanh Toan: {data.payments}</p>
+        <p className="py-2 px-3">Mã đơn hàng: {data._id}</p>
+        <p className="py-2 px-3">Tên khách hàng: {data.name}</p>
+        <p className="py-2 px-3">Hình thức thanh toán: {data.payments}</p>
         <p className="py-2 px-3">
-          Trang Thai Don Hang:{" "}
+          Trạng thái đơn hàng:{" "}
           <select
             onChange={handleOnChange}
             name="statusOrder"
@@ -76,7 +76,7 @@ const ModalEditOder = ({ data, handleClose }) => {
           </select>
         </p>
         <p className="py-2 px-3">
-          Trang Thai Thanh Toan:{" "}
+          Trạng thái thanh toán:{" "}
           <select
             onChange={handleOnChange}
             name="isPaid"
