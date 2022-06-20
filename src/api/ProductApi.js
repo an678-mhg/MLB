@@ -1,7 +1,7 @@
 import axios from "axios";
 import axiosClient from "./axiosClient";
 
-export const getProductsApi = (category = "All", page = 1, limit = 5) => {
+export const getProductsApi = (category = "All", page = 1, limit = 10) => {
   return axiosClient.get(
     `/api/product?category=${category}&page=${page}&limit=${limit}`
   );
