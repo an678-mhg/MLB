@@ -83,7 +83,7 @@ const CheckOut = () => {
                   value={newOrder.name}
                   onChange={onChangeInput}
                   className="w-full px-2 py-1 border rounded-md"
-                  placeholder="Ex: Nguyen Quoc An"
+                  placeholder="Ex: Nguyen Van A"
                   required
                 />
               </div>
@@ -107,7 +107,7 @@ const CheckOut = () => {
                   value={newOrder.email}
                   onChange={onChangeInput}
                   className="w-full px-2 py-1 border rounded-md"
-                  placeholder="Ex: an567008@gmail.com"
+                  placeholder="Ex: mlb@gmail.com"
                   required
                 />
               </div>

@@ -103,8 +103,8 @@ const AdminPage = () => {
             path=""
             element={
               <div className="h-[100%] flex items-center justify-center">
-                <h1 className="text-2xl">
-                  Chào mừng bạn đến trang quản trị của AShop
+                <h1 className="text-xl font-bold text-center">
+                  Chào mừng bạn đến trang quản trị của MLB
                 </h1>
               </div>
             }

@@ -82,7 +82,7 @@ const Info = () => {
         </h3>
         <form
           onSubmit={handleOnSubmit}
-          className="w-[700px] mx-auto max-w-full"
+          className="w-[700px] mx-auto max-w-full p-4"
         >
           <div className="flex items-center">
             <div className="w-[100px] height-[100px] rounded-full relative">
