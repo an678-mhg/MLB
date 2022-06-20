@@ -80,8 +80,8 @@ const FormEditUsers = () => {
           name="status"
           onChange={handleOnchange}
         >
-          <option value="Active">Active</option>
-          <option value="Banned">Banned</option>
+          <option value="Active">Hoạt động</option>
+          <option value="Banned">Bị cấm</option>
         </select>
       </div>
       <div className="w-full mt-4">
@@ -92,8 +92,8 @@ const FormEditUsers = () => {
           name="roleId"
           onChange={handleOnchange}
         >
-          <option value={"admin"}>admin</option>
-          <option value={"user"}>user</option>
+          <option value={"admin"}>Nhân viên</option>
+          <option value={"user"}>Người dùng</option>
         </select>
       </div>
       <div className="w-full mt-4 text-right">
