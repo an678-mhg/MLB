@@ -42,7 +42,7 @@ const ModalEditOder = ({ data, handleClose }) => {
       handleClose();
     } catch (error) {
       console.log(error);
-      return toast.error("Sửa thất bại!");
+      toast.error("Sửa thất bại!");
     }
     setLoading(false);
   };
