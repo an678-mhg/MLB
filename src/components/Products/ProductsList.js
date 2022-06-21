@@ -5,7 +5,7 @@ import LoadingCenter from "../Loading/LoadingCenter";
 import Paginate from "../Paginate";
 import { useSearchParams } from "../../hooks/useSearchParams";
 
-const ProductsList = ({ category, title, paginate }) => {
+const ProductsList = ({ category, title, paginate, limit }) => {
   const [product, setProduct] = useState([]);
   const [totalPage, setTotalPage] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -17,8 +17,8 @@ const ProductsList = ({ category, title, paginate }) => {
         setLoading(true);
         const res = await getProductsApi(
           category,
-
-          searchParams.get("page")
+          searchParams.get("page"),
+          limit
         );
         if (res.data.success) {
           setProduct(res.data.products);
