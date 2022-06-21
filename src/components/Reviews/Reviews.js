@@ -59,7 +59,7 @@ const Reviews = () => {
       };
       const res = await postReview({ ...newReview, user: currentUser._id });
       if (res.data.success) {
-        return toast.success("Nhan xet thanh cong!");
+        return toast.success("Nhận xét thành công!");
       }
       setReviewList([...reviewList, newReview]);
       setReview({
@@ -69,7 +69,7 @@ const Reviews = () => {
     } catch (error) {
       console.log(error);
       setLoading(false);
-      return toast.error("Nhan xet that bai!");
+      return toast.error("Nhận xét thất bại!");
     }
     setLoading(false);
   };
@@ -156,7 +156,7 @@ const Reviews = () => {
           ))
         ) : (
           <div className="bg-white text-center p-3 mt-3 rounded-md">
-            Chua co nhan xet nao
+            Chưa có nhận xét nào
           </div>
         )}
       </div>
