@@ -60,10 +60,6 @@ const Cart = () => {
           <p className="text-md">{cart.length}</p>
         </div>
         <div className="flex items-center justify-between mt-4">
-          <p className="text-md">Thuế VAT</p>
-          <p className="text-md">{VAT + "%"}</p>
-        </div>
-        <div className="flex items-center justify-between mt-4">
           <p className="text-md">Giá chưa bao gồm thuế</p>
           <p className="text-md">
             <NumberFormat
@@ -73,6 +69,10 @@ const Cart = () => {
               suffix={"đ"}
             />
           </p>
+        </div>
+        <div className="flex items-center justify-between mt-4">
+          <p className="text-md">Thuế VAT</p>
+          <p className="text-md">{VAT + "%"}</p>
         </div>
         <div className="flex items-center justify-between mt-4">
           <p className="text-md">Total</p>
